@@ -1,0 +1,5 @@
+rootProject.name = "ModelB_12_11"
+include ':app'
+include ':modelc'
+include ':modled'
+include ':model_d'

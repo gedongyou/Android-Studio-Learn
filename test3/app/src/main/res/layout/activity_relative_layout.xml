@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="正常"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:text="相对上级居中"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="~水平居中"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="~水平居中/居下"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="~垂直居中"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="~垂直居中居右"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="~居右"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="~右下"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="~左下"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_height="wrap_content"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="相对于平级元素对齐"
+        android:layout_alignTop="@id/tv_center"
+        android:layout_toLeftOf="@id/tv_center"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

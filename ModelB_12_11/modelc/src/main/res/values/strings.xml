@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ModelC</string>
+    <string name="baseURL">http://10.69.44.60:8080/nursing</string>
+</resources>
