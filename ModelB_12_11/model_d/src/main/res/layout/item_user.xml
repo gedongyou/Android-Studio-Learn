@@ -4,24 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="120dp">
 
+    <!-- 右侧菜单，保持不动 -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/menu_content"
+        android:layout_width="200dp"
         android:layout_height="match_parent"
+        android:layout_gravity="end|center_vertical"
         android:background="@color/red"
-        android:gravity="center_vertical|end"
-        android:paddingEnd="24dp">
+        android:gravity="center"
+        android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="收藏" />
+            android:text="收藏"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
+    <!-- 内容容器：滑动时只移动这个视图 -->
     <LinearLayout
-        android:gravity="center"
+        android:id="@+id/content_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/item_wdsc_bg"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="12dp">
 
@@ -31,6 +39,7 @@
             app:cardCornerRadius="200000dp">
 
             <ImageView
+                android:id="@+id/tx"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
@@ -40,32 +49,35 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:gravity="center_vertical"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/userName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="用户名："
-                android:textSize="20dp"
                 android:textColor="@color/black"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/realName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="真实姓名："
-                android:textSize="20dp"
                 android:textColor="@color/black"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="电话："
-                android:textSize="20dp"
                 android:textColor="@color/black"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
         </LinearLayout>
